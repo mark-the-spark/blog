@@ -11,7 +11,7 @@
 |
 */
 
-//Add nifty new feature.  
+//New feature
 
 //Articles
 Route::get('/', ['uses' => 'ArticlesController@index', 'as' => 'home']);
