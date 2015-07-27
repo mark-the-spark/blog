@@ -11,6 +11,8 @@
 |
 */
 
+//Add nifty new feature.  
+
 //Articles
 Route::get('/', ['uses' => 'ArticlesController@index', 'as' => 'home']);
 Route::get('/create', ['uses' => 'ArticlesController@create', 'as' => 'article.create']);
