@@ -11,7 +11,7 @@
 |
 */
 
-//Some mistakezzzzzzzdsdvds
+//Some mistake which has been corrected.
 
 
 //Articles
