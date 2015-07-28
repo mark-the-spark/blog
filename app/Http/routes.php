@@ -11,9 +11,9 @@
 |
 */
 
+
 //Some mistake which has been corrected.But more mistakes exist
 
-//Some cool new feature that requires pg_lo_tell(large_object)s of work....
 
 
 //Articles
