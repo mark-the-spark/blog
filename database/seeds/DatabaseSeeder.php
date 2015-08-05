@@ -21,6 +21,10 @@ class DatabaseSeeder extends Seeder
         
         DB::table('articles')->truncate();
         DB::table('users')->truncate();
+        DB::table('roles')->truncate();
+        DB::table('role_user')->truncate();
+
+
         
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
 

@@ -7,9 +7,18 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Tag;
+use App\Repositories\TagRepositoryInterface;
 
 class TagsController extends Controller
 {
+    
+    public $tags;
+
+    public function __construct(TagRepositoryInterface $tags)
+    {
+        $this->tags = $tags;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -48,7 +57,7 @@ class TagsController extends Controller
      */
     public function show($name)
     {
-        $tag = Tag::where('name', $name)->firstOrFail();
+        $tag = $this->tags($name);
 
         return view('tags.index', compact('tag'));
     }

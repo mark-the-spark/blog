@@ -28,8 +28,8 @@ class ArticleRepository implements ArticleRepositoryInterface {
 
 	public function groupByDate() 
 	{
-		return Article::all()->groupBy(function($date){
-			return Carbon::parse($date->created_at)->format('Y-m');
+		return Article::orderBy('published_at', 'desc')->get()->groupBy(function($date){
+			return Carbon::parse($date->published_at)->format('Y-m');
 		});
 
 

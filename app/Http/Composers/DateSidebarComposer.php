@@ -16,7 +16,7 @@ class DateSidebarComposer {
 
 	public function compose(View $view)
 	{
-		$view->with('article_groups', $this->article->groupByDate());
+		$view->with('articles_by_date', $this->article->groupByDate());
 	}
 
 
